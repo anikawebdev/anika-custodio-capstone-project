@@ -1,0 +1,16 @@
+[
+  {
+    "id": "26a3b0e6-7ac0-401e-a56b-7d1a8a1f75c0",
+    "timestamp": 1592945125227,
+    "type": "money-in",
+    "source": "sold old textbooks",
+    "amount": 500
+  },
+  {
+    "id": "bb1c08e1-feb5-4acd-908c-48d0b5a74334",
+    "timestamp": 1592947421324,
+    "type": "money-in",
+    "source": "gift from grandma",
+    "amount": 500
+  }
+]
