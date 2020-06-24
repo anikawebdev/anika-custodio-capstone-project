@@ -6,7 +6,7 @@ const getMoneyOut = (type) => {
   const moneyOutTransactions = JSON.parse(transactions).filter(
     (transaction) => transaction.type === "money-out"
   );
-  console.log(moneyOutTransactions);
+
   return moneyOutTransactions;
 };
 
