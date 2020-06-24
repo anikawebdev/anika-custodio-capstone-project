@@ -1,16 +1,1 @@
-[
-  {
-    "id": "26a3b0e6-7ac0-401e-a56b-7d1a8a1f75c0",
-    "timestamp": 1592945125227,
-    "type": "money-in",
-    "source": "sold old textbooks",
-    "amount": 500
-  },
-  {
-    "id": "bb1c08e1-feb5-4acd-908c-48d0b5a74334",
-    "timestamp": 1592947421324,
-    "type": "money-in",
-    "source": "gift from grandma",
-    "amount": 500
-  }
-]
+[{"id":"bb1c08e1-feb5-4acd-908c-48d0b5a74334","timestamp":1592947421324,"type":"money-in","source":"gift from grandma","amount":500},{"id":"442aee21-4ecb-4f91-bf52-3cf1b0aeee31","timestamp":1592997689631,"type":"money-in","source":"mama","amount":150},{"id":"7fd9e802-012a-4113-8562-896e836a66d5","timestamp":1592997852215,"type":"money-in","source":"mama","amount":150},{"id":"f2dda950-ea4c-40ee-826a-c219cdd84cd4","timestamp":1592997995316,"type":"money-in","source":"papa","amount":175},{"id":"4545dbd5-a1c1-42c9-8d0c-ad33e0cc5d84","timestamp":1592998091526,"type":"money-in","source":"sold chair","amount":20},{"id":"8867aa84-c8ba-4af4-84f3-b7ca32b1f119","timestamp":1592999599531,"type":"money-out","source":"aritzia","amount":86},{"id":"2fb572fb-965d-4529-a75a-9dcf2f0e7f7d","timestamp":1593009783813,"type":"money-out","source":"starbucks","amount":30},{"id":"c3bb7042-dbb9-4fe2-94b1-7b6c12b40f5c","timestamp":1593018207936,"type":"money-out","source":"Mcdonalds","amount":12},{"id":"9ef892cd-a9e6-4b54-8cfa-3b3643b8ef0b","timestamp":1593019400494,"type":"money-out","source":"burger king","amount":15},{"id":"a608ad3e-07ce-45f0-b0ce-68f198ad90a0","timestamp":1593027871951,"type":"money-out","source":"lindt","amount":10},{"id":"acb23193-ce75-44bd-b741-1f171283d20b","timestamp":1593028337232,"type":"money-out","source":"sweet factory","amount":15},{"id":"767bce8e-74b0-47ab-978e-39fdee15bd6d","timestamp":1593029946763,"type":"money-out","source":"gap","amount":75},{"id":"61ca9784-a8e7-45a8-8a58-d4f99e35b6c1","timestamp":1593033425929,"type":"money-out","source":"earls","amount":20}]
