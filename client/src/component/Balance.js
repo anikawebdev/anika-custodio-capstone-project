@@ -22,27 +22,22 @@ function Balance(props) {
   //   OK
 
   function getBalance(moneyIn, moneyOut) {
-    //let moneyInTotal = moneyIn.map(() => {
     let balance = 0;
 
     for (let i = 0; i < moneyIn.length; i++) {
       balance += moneyIn[i];
     }
-    // return balance;
-    //});
 
     for (let i = 0; i < moneyOut.length; i++) {
       balance -= moneyOut[i];
     }
-
-    //let balance = moneyIn - moneyOut;
 
     return balance;
   }
 
   let balance = getBalance(moneyIn, moneyOut);
 
-  return <div>{balance}</div>;
+  return <h1>${balance}</h1>;
 }
 
 export default Balance;

@@ -1,0 +1,44 @@
+@import "./variable";
+
+.details {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.details h2 {
+  margin: 0;
+  text-align: center;
+  font-family: $font-family-demi;
+  font-size: 2rem;
+}
+
+.transaction-details {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+
+.transaction-details h3 {
+  font-family: $font-family-demi;
+}
+
+.transaction-details div {
+  width: 40%;
+  background-color: rgba(192, 192, 192, 0.35);
+  padding-bottom: 25px;
+}
+
+.transaction-details button {
+  border-radius: 50%;
+  background-color: red;
+}
+
+.money-in-list li,
+.money-out-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}

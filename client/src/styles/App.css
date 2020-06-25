@@ -367,7 +367,7 @@ body {
   font-family: "Avenir Next Regular", sans-serif;
   font-size: 16px;
   width: 100%;
-  background-image: url(../assets/image/main-bg.jpg);
+  background-image: url(../assets/image/plant-bg.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -384,11 +384,205 @@ body {
 
 .container {
   max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 75px;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h2 {
+  font-family: "Avenir Next Demi";
+  font-size: 2rem;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar a {
+  margin-left: 30px;
+}
+
+h1 {
+  width: 80%;
+  margin: 50px auto;
+  font-family: "Avenir Next Bold";
+  color: whitesmoke;
+  font-size: 10rem;
+  text-align: center;
+}
+
+.overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.overview h2 {
+  font-family: "Avenir Next Demi";
+  font-size: 2rem;
+}
+
+.overview span {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.button--big {
+  height: 50px;
+  width: 200px;
+  border-radius: 25px;
+  background-color: yellowgreen;
+  border-color: yellowgreen;
+}
+
+.details {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.details h2 {
+  margin: 0;
+  text-align: center;
+  font-family: "Avenir Next Demi";
+  font-size: 2rem;
+}
+
+.transaction-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px 0;
+}
+
+.transaction-details h3 {
+  font-family: "Avenir Next Demi";
+}
+
+.transaction-details div {
+  width: 40%;
+  background-color: rgba(192, 192, 192, 0.35);
+  padding-bottom: 25px;
+}
+
+.transaction-details button {
+  border-radius: 50%;
+  background-color: red;
+}
+
+.money-in-list li,
+.money-out-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.form__source,
+.form__amount {
+  border-radius: 25px;
+  width: 75%;
+  margin: 20px auto;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+select {
+  border-radius: 25px;
+  width: 35%;
+  height: 45px;
+  margin: 20px auto;
+  padding-left: 30px;
+}
+
+textarea {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.add-transaction {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.add-transaction h2 {
+  font-size: 2rem;
+  font-family: "Avenir Next Demi";
+  margin: 0;
+  text-align: center;
 }
 /*# sourceMappingURL=App.css.map */

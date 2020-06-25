@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  //background-color: rgba(255, 255, 255, 0.85);
+  // padding-top: 25px;
+  padding-top: 50px;
+}
+
+.form__source,
+.form__amount {
+  border-radius: 25px;
+  width: 75%;
+  margin: 20px auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  border-radius: 25px;
+  width: 35%;
+  height: 45px;
+  margin: 20px auto;
+  padding-left: 30px;
+}
+
+textarea {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.add-transaction {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.add-transaction h2 {
+  font-size: 2rem;
+  font-family: $font-family-demi;
+  margin: 0;
+  text-align: center;
+}

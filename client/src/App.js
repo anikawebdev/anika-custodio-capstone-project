@@ -2,6 +2,7 @@ import React, { Component } from "react";
 //import logo from "./logo.svg";
 import axios from "axios";
 import { Route, Redirect, Switch } from "react-router-dom";
+import Header from "./component/Header";
 import Balance from "./component/Balance";
 import Details from "./component/Details";
 import Overview from "./component/Overview";
@@ -45,7 +46,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <Header /> */}
+        <Header />
 
         <Route
           path="/"
@@ -63,8 +64,6 @@ class App extends Component {
         />
 
         <Switch>
-          {/* <Route path="/transactions" component={AddOnTransactionList} /> */}
-
           <Route
             path="/transactions"
             render={(props) => {
@@ -88,6 +87,7 @@ class App extends Component {
                   <Details
                     moneyInList={this.state.moneyInList}
                     moneyOutList={this.state.moneyOutList}
+                    getData={this.getData}
                     {...props}
                   />
                 </React.Fragment>

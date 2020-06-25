@@ -43,7 +43,7 @@ class HelloMoney extends Component {
       <section className="add-transaction">
         <h2 className="add-transaction__title">hello money OR buhbye money</h2>
         <div className="add-transaction__wrapper">
-          <div className="form-wrapper">
+          <div className="form-wrapper container">
             <form className="form" onSubmit={this.handleAddMoneyInTransaction}>
               <label htmlFor="form__source" className="form__input-source">
                 where did the money come from? or where is it going?
@@ -51,7 +51,7 @@ class HelloMoney extends Component {
               <textarea
                 id="form__source"
                 className="form__source"
-                placeholder="enter location here"
+                placeholder="enter source or location here"
                 onChange={this.handleSource}
               ></textarea>
               <label htmlFor="form__amount" className="form__input-amount">
@@ -73,7 +73,10 @@ class HelloMoney extends Component {
 
               <div className="add-buttons">
                 <div className="add-button-wrapper">
-                  <button className="button add-button" type="submit">
+                  <button
+                    className="button add-button button--big"
+                    type="submit"
+                  >
                     kaching!
                   </button>
                 </div>

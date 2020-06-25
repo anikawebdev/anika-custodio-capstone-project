@@ -1,0 +1,10 @@
+@import "./variable";
+
+h1 {
+  width: 80%;
+  margin: 50px auto;
+  font-family: $font-family-bold;
+  color: whitesmoke;
+  font-size: 10rem;
+  text-align: center;
+}
