@@ -51,7 +51,7 @@ class HelloMoney extends Component {
               <textarea
                 id="form__source"
                 className="form__source"
-                placeholder="enter source or location here"
+                placeholder="enter source or location"
                 onChange={this.handleSource}
               ></textarea>
               <label htmlFor="form__amount" className="form__input-amount">
@@ -60,7 +60,7 @@ class HelloMoney extends Component {
               <textarea
                 id="form__amount"
                 className="form__amount"
-                placeholder="enter amount here"
+                placeholder="enter amount"
                 onChange={this.handleAmount}
               ></textarea>
               <label>

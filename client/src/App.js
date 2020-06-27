@@ -48,46 +48,15 @@ class App extends Component {
       <div>
         <Header />
 
-        <Route
-          path="/"
-          render={(props) => {
-            return (
-              <React.Fragment>
-                <Balance
-                  moneyInList={this.state.moneyInList}
-                  moneyOutList={this.state.moneyOutList}
-                  {...props}
-                />
-              </React.Fragment>
-            );
-          }}
-        />
-
-        <Switch>
+        <section className="main">
           <Route
-            path="/transactions"
+            path="/"
             render={(props) => {
               return (
                 <React.Fragment>
-                  <AddOnTransactionList
-                    transactionList={this.state.transactions}
-                    getData={this.getData}
-                    {...props}
-                  />
-                </React.Fragment>
-              );
-            }}
-          />
-
-          <Route
-            path="/details"
-            render={(props) => {
-              return (
-                <React.Fragment>
-                  <Details
+                  <Balance
                     moneyInList={this.state.moneyInList}
                     moneyOutList={this.state.moneyOutList}
-                    getData={this.getData}
                     {...props}
                   />
                 </React.Fragment>
@@ -95,9 +64,42 @@ class App extends Component {
             }}
           />
 
-          <Route path="/overview" component={Overview} />
-          <Redirect exact from="/" to="/overview" />
-        </Switch>
+          <Switch>
+            <Route
+              path="/transactions"
+              render={(props) => {
+                return (
+                  <React.Fragment>
+                    <AddOnTransactionList
+                      transactionList={this.state.transactions}
+                      getData={this.getData}
+                      {...props}
+                    />
+                  </React.Fragment>
+                );
+              }}
+            />
+
+            <Route
+              path="/details"
+              render={(props) => {
+                return (
+                  <React.Fragment>
+                    <Details
+                      moneyInList={this.state.moneyInList}
+                      moneyOutList={this.state.moneyOutList}
+                      getData={this.getData}
+                      {...props}
+                    />
+                  </React.Fragment>
+                );
+              }}
+            />
+
+            <Route path="/overview" component={Overview} />
+            <Redirect exact from="/" to="/overview" />
+          </Switch>
+        </section>
       </div>
     );
   }

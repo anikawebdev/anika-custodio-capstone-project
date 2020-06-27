@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="header container">
+    <header className="header">
       <div className="header-wrapper">
         <h2>money hack</h2>
 

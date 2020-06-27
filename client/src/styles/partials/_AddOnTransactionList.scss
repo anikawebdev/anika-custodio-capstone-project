@@ -2,18 +2,26 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  font-size: 0.85rem;
   //background-color: rgba(255, 255, 255, 0.85);
   // padding-top: 25px;
-  padding-top: 50px;
+  //padding-top: 50px;
+  @include tablet {
+    font-size: 1rem;
+  }
 }
 
 .form__source,
 .form__amount {
   border-radius: 25px;
-  width: 75%;
-  margin: 20px auto;
+  width: 90%;
+  margin: 10px auto;
+  @include tablet {
+    max-width: 400px;
+    margin: 20px auto;
+  }
 }
 
 label {
@@ -23,27 +31,43 @@ label {
 
 select {
   border-radius: 25px;
-  width: 35%;
-  height: 45px;
-  margin: 20px auto;
-  padding-left: 30px;
+  width: 75%;
+  max-width: 194px;
+  height: 35px;
+  margin: 10px auto 20px auto;
+  padding-left: 35px;
+  @include tablet {
+    max-width: 400px;
+    padding-left: 150px;
+  }
 }
 
 textarea {
-  padding-left: 25px;
-  padding-top: 15px;
+  //padding-left: 25px;
+  padding-top: 9px;
+  height: 35px;
+  text-align: center;
 }
 
 .add-transaction {
   background-color: rgba(255, 255, 255, 0.85);
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 20px 0 40px 0;
+  //height: 410px;
+  border-radius: 25px;
+  @include tablet {
+    width: 80%;
+    border-radius: 45px;
+  }
 }
 
 .add-transaction h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: $font-family-demi;
-  margin: 0;
+  //margin: 0;
   text-align: center;
+  @include tablet {
+    font-size: 2rem;
+  }
 }

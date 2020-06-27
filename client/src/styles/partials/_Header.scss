@@ -1,4 +1,6 @@
-@import "./variable";
+//
+// HEADER
+//
 
 .header {
   width: 100%;
@@ -6,23 +8,37 @@
 }
 
 .header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  height: 75px;
-  width: 80%;
-  margin: 0 auto;
-  align-items: center;
+  padding-bottom: 15px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 15px;
+  }
 }
 
 .header h2 {
   font-family: $font-family-demi;
   font-size: 2rem;
+  text-align: center;
+  margin: 15px 0;
 }
 
 .navbar {
+  width: 90%;
   display: flex;
+  justify-content: space-between;
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .navbar a {
-  margin-left: 30px;
+  @include tablet {
+    margin-left: 30px;
+  }
 }

@@ -18,16 +18,22 @@ class Details extends Component {
   render() {
     const moneyIn = this.props.moneyInList.map((moneyInItem) => (
       <li className="money-in-item" key={moneyInItem.id}>
-        <span className="money-in-item__source">{moneyInItem.source}</span>
-        <span className="money-in-item__amount">{moneyInItem.amount}</span>
+        <div>
+          <span className="money-in-item__source">{moneyInItem.source}</span>
+          <span className="money-in-item__amount">{moneyInItem.amount}</span>
+        </div>
+
         <button onClick={() => this.handleDelete(moneyInItem.id)}> x </button>
       </li>
     ));
 
     const moneyOut = this.props.moneyOutList.map((moneyOutItem) => (
       <li className="money-out-item" key={moneyOutItem.id}>
-        <span className="money-out-item__source">{moneyOutItem.source}</span>
-        <span className="money-out-item__amount">{moneyOutItem.amount}</span>
+        <div>
+          <span className="money-out-item__source">{moneyOutItem.source}</span>
+          <span className="money-out-item__amount">{moneyOutItem.amount}</span>
+        </div>
+
         <button onClick={() => this.handleDelete(moneyOutItem.id)}> x </button>
       </li>
     ));
@@ -35,14 +41,16 @@ class Details extends Component {
     return (
       <div className="details">
         <h2>transactions</h2>
+        <div className="list-header">
+          <h3>hello money</h3>
+          <h3>buhbye money</h3>
+        </div>
         <div className="transaction-details">
           <div>
-            <h3>hello money</h3>
             <ul className="money-in-list">{moneyIn}</ul>
           </div>
 
           <div>
-            <h3>buhbye money</h3>
             <ul className="money-out-list">{moneyOut}</ul>
           </div>
         </div>
